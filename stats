@@ -1,0 +1,52 @@
+--------- 1st pass
+gentoo-node1 ~ # wc -l frag15
+11334 frag15
+
+gentoo-node1 ~ # time dfg2.sh | grep real
+real    10m54.621s
+
+gentoo-node1 ~ # wc -l frag15
+2386 frag15
+--------- 2nd pass
+gentoo-node1 ~ # wc -l frag15
+2386 frag15
+
+gentoo-node1 ~ # time dfg2.sh | grep real
+real    2m57.493s
+
+gentoo-node1 ~ # wc -l frag15
+1208 frag15
+--------- 3rd pass
+gentoo-node1 ~ # wc -l frag15
+2308 frag15
+
+gentoo-node1 ~ # time dfg2.sh | grep real
+real    2m15.432s
+
+gentoo-node1 ~ # wc -l frag15
+1208 frag15
+--------- 4th pass
+gentoo-node1 ~ # wc -l frag15
+1208 frag15
+
+gentoo-node1 ~ # time dfg2.sh | grep real
+real    0m34.967s
+
+gentoo-node1 ~ # wc -l frag15
+593 frag15
+--------- 4th pass
+gentoo-node1 ~ # wc -l frag15
+593 frag15
+
+gentoo-node1 ~ # time dfg2.sh | grep real
+real    0m21.276s
+
+gentoo-node1 ~ # wc -l frag15
+405 frag15
+
+
+
+After "emerge -e world":
+5792 -> 4727
+4727 -> 2192
+2191 -> 1510

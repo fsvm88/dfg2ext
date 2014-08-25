@@ -1,0 +1,1 @@
+/sbin/filefrag $FILENAME | sed 's,'$FILENAME': ,,' | sed 's:[^0-9].*::'
